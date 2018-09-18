@@ -10,8 +10,5 @@
     <content src="index.html" />
     <access origin="*" />
     <engine name="browser" spec="~5.0.4" />
-    <feature name="Camera">
-        <param name="android-package" value="org.apache.cordova.CameraLauncher" />
-        <param name="ios-package" value="CDVCamera" />
-    </feature>
+    <plugin name="phonegap-plugin-media-stream" spec="~1.2.1" />
 </widget>
