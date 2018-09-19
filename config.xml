@@ -10,5 +10,5 @@
     <content src="index.html" />
     <access origin="*" />
     <engine name="browser" spec="~5.0.4" />
-    <plugin name="phonegap-plugin-barcodescanner" spec="~8.0.0" />
+    <plugin name="cordova-plugin-barcodescanner" spec="~0.7.4" />
 </widget>
