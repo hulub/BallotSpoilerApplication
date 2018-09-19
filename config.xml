@@ -10,7 +10,6 @@
     <content src="index.html" />
     <access origin="*" />
     <engine name="browser" spec="~5.0.4" />
-    <!-- add a version here, otherwise PGB will use whatever the latest version of the package on npm is -->
-    <plugin name="phonegap-plugin-barcodescanner" version="8.0.0" />
     <preference name="android-build-tool" value="gradle" />
+    <plugin name="cordova-plugin-barcodescanner" spec="~0.7.4" />
 </widget>
