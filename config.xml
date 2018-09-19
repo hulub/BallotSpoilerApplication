@@ -10,7 +10,6 @@
     <content src="index.html" />
     <access origin="*" />
     <engine name="browser" spec="~5.0.4" />
-    <plugin name="phonegap-plugin-barcodescanner" spec="~8.0.0">
-        <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.1.1" />
-    </plugin>
+    <plugin name="phonegap-plugin-barcodescanner" spec="~8.0.0" />
+    <preference name="android-build-tool" value="gradle" />
 </widget>

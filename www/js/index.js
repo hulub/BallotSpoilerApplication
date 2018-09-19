@@ -63,6 +63,23 @@ var app = {
     );
   },
 
+  checkPermissionCallback: function (status) {
+    if (!status.hasPermission) {
+      var errorCallback = function () {
+        alert('Camera permission is not turned on');
+      }
+
+      permissions.requestPermission(
+        permissions.CAMERA,
+        function (status) {
+          if (!status.hasPermission) errorCallback();
+        },
+        errorCallback);
+    } else {
+      alert('Camera permission allowed');
+    }
+  },
+
   decrypt: function () {
     app.hideDecryptedVote()
 
